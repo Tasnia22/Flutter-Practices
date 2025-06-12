@@ -1,0 +1,54 @@
+import 'package:flutter/material.dart';
+
+class Mydrawer extends StatelessWidget
+{
+  @override
+
+  Widget build(BuildContext context)
+  {
+    return Drawer(
+      child: ListView(
+        padding: EdgeInsets.zero,
+        children: [
+          DrawerHeader(
+            decoration: BoxDecoration(color: Colors.green),
+            
+            child: Text('About Us',style: TextStyle(color: Colors.white,
+          fontSize: 24.0,),),),
+
+                
+ ListTile(
+            leading: Icon(Icons.home),
+            title: Text('Home'),
+            onTap: (){}
+
+          ,),
+
+ListTile(
+  leading: Icon(Icons.phone),
+  title: Text('Phone'),
+  onTap: () {
+    
+  },
+),
+
+
+ListTile(
+  leading: Icon(Icons.email),
+  title: Text('Email'),
+  onTap: () {
+    
+  },
+),
+
+
+
+ ListTile(
+            leading: Icon(Icons.settings),
+            title: Text('Settings'),
+          onTap: (){},),
+        ],
+      ),
+    );
+  }
+}
