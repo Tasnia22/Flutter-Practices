@@ -1,0 +1,26 @@
+import 'package:flutter/material.dart';
+
+void main() =>runApp(MyApp());
+
+class MyApp extends StatelessWidget
+{
+  @override
+
+Widget build(BuildContext context)
+{
+  return MaterialApp(
+    home: Scaffold(
+      appBar: AppBar(title: Text('Rabbit'),
+          backgroundColor: const Color.fromARGB(255, 156, 199, 230) // App Bar title color
+),
+
+
+                backgroundColor:const Color.fromARGB(255, 199, 222, 209),
+ // Change AppBar color here
+      body: Center(child: Text('Welcome Here')),
+    ),
+    );
+  
+}
+
+}
