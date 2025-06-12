@@ -1,0 +1,35 @@
+ 
+  import 'package:flutter/material.dart';
+
+class SecondPage extends StatelessWidget
+{
+@override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Second Page'),
+          backgroundColor: Color.fromARGB(255, 199, 222, 209), // Light green
+
+
+      
+
+ leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+      ),
+  
+body: Center(
+  child: Text('Well Done!Buddy. You have successfully landed on the 2nd page .',
+  style: TextStyle(fontSize: 20.0),
+  textAlign: TextAlign.center,
+    
+  ),
+  ),
+);
+ }
+}
