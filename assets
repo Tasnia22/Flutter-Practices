@@ -1,0 +1,26 @@
+ 
+import 'package:flutter/material.dart';
+
+class Imagescreen extends StatelessWidget {
+
+@override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Image Screen'),
+        backgroundColor:Color(
+          0xFF9CC7E6
+
+        ),),
+      
+      body:  Center(
+        child: Image.asset('assets/rabbitlogo.png',
+          width:200,
+          height: 200,),
+    ),);
+  }
+
+
+}
