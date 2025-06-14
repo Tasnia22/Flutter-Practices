@@ -1,0 +1,61 @@
+ 
+import 'package:flutter/material.dart';
+import 'package:flutter_application_2/image.dart';
+
+class SecondPage extends StatelessWidget
+{
+  const SecondPage({super.key});
+
+@override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Second Page'),
+          backgroundColor: Color.fromARGB(255, 199, 222, 209), // Light green
+
+
+      
+
+ leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+      ),
+      
+
+      
+body: Column( mainAxisAlignment: MainAxisAlignment.center,
+children: [
+
+Center(
+  child: Text('Well Done!Buddy. You have successfully landed on the 2nd page .',
+  style: TextStyle(fontSize: 20.0),
+  textAlign: TextAlign.center,
+    
+  ),
+  ),
+
+ SizedBox(height: 20.0),
+ GestureDetector(
+
+onTap: () {
+  Navigator.push( context,
+  MaterialPageRoute(builder:(context) => Imagescreen(),),
+  );
+},
+
+child: Container(
+  color: Color.fromARGB(122, 45, 123, 200),
+  padding: EdgeInsets.zero,
+  child: Text('See Image'),
+),
+
+
+ ),
+ SizedBox(height: 20.0),],
+ ),);} }
+
